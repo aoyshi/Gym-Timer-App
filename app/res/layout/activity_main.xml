@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/fifteenBtn"
+        android:layout_width="157dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/fortyBtn"
+        android:layout_alignStart="@+id/textView"
+        android:background="@color/color15"
+        android:text="15"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="182dp"
+        tools:textSize="50sp" />
+
+    <Button
+        android:id="@+id/twentyBtn"
+        android:layout_width="157dp"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/fifteenBtn"
+        android:layout_toEndOf="@+id/fifteenBtn"
+        android:background="@color/color20"
+        android:text="20"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <Button
+        android:id="@+id/thirtyBtn"
+        android:layout_width="157dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignStart="@+id/fifteenBtn"
+        android:background="@color/color30"
+        android:text="30"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <Button
+        android:id="@+id/fortyBtn"
+        android:layout_width="157dp"
+        android:layout_height="200dp"
+        android:layout_alignStart="@+id/twentyBtn"
+        android:layout_alignTop="@+id/thirtyBtn"
+        android:background="@color/color45"
+        android:text="45"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="258dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="319dp"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="20dp"
+        android:text="Seconds"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="319dp"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Double Tap to Start Timer"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
